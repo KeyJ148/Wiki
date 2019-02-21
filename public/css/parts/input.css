@@ -1,0 +1,76 @@
+/*Подпись к элементу формы*/
+
+span.form {
+    width: 150px;
+    padding: 3px;
+    float: left;
+}
+
+/*Общее свойство элементов формы*/
+
+.button {
+    background-color: #EEF5F6;
+    border: solid 1px #D6E0E2;
+}
+
+/*Поле ввода*/
+
+input.text {
+    height: 20px;
+    width: 221px;
+    padding: 5px 8px;
+    font: 11pt arial;
+}
+
+/*Выпадающий список*/
+
+select, option  {
+    width:240px;
+    height:33px;
+}
+
+/*Кнопка отправки формы*/
+
+input.button {
+    width:396px;
+    padding: 6px 20px;
+    text-align: center;
+}
+
+input.button:hover {
+    background-color: #D6E0E2;
+    cursor: pointer;
+}
+
+input.button:active {
+    background-color: #B6C0C2;
+}
+
+/*Для sidebar*/
+
+input.mini-button {
+    width: 260px;
+}
+
+input.mini-button-2 {
+    width: 127px;
+}
+
+input.mini-text {
+    width: 240px;
+}
+
+input.red-button{
+    background: #F2EBDE;
+    border: solid 1px #BFB5A4;
+    box-shadow: inset 0px 0px 0px 1px #fff;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.9);
+}
+
+input.red-button:hover{
+    background-color: #C2AB9E;
+}
+
+input.red-button:active {
+    background-color: #A28B8E;
+}
