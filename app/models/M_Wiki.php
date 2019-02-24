@@ -149,6 +149,16 @@ class M_Wiki extends Model{
         if ($resultFilter === true) $category_id = $categoryFilter->db_id;
         if ($page_id == 0) $category_id = M_Wiki::HIDE_CATEGORY_ID;
 
+        $recursive_category_id = $category_id;
+        while ($recursive_category_id >= 0){
+            if ($recursive_category_id === $page_id) return M_Error::_ERROR_CATEGORY_RECURSIVE;
+            $pageFilter = new ORM_Page();
+            $pageFilter->db_id = $recursive_category_id;
+            $pageFilter->load();
+            $recursive_category_id = $pageFilter->db_category_id;
+        }
+
+
         $last_change = date($this->getDateFormat());
         $last_change_user_id = $person->db_id;
 
