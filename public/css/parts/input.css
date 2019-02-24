@@ -11,6 +11,11 @@ span.form {
 .button {
     background-color: #EEF5F6;
     border: solid 1px #D6E0E2;
+    outline: none;
+}
+
+input {
+    outline: none;
 }
 
 /*Поле ввода*/
@@ -20,6 +25,7 @@ input.text {
     width: 221px;
     padding: 5px 8px;
     font: 11pt arial;
+
 }
 
 /*Выпадающий список*/

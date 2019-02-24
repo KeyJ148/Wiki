@@ -29,7 +29,7 @@ class C_Wiki extends DefaultPageController {
 
         $sidebarConstructor = new M_SidebarConstructor();
         $sidebarConstructor->setContentDescription('');
-        $sidebarConstructor->setLinks($data['links']);
+        if (isset($data['links'])) $sidebarConstructor->setLinks($data['links']);
         $navigation = $sidebarConstructor->getNavigationView();
 
         $levelUpButton = new V_Empty();
@@ -84,7 +84,7 @@ class C_Wiki extends DefaultPageController {
 
         $sidebarConstructor = new M_SidebarConstructor();
         $sidebarConstructor->setContentDescription('');
-        $sidebarConstructor->setLinks($data['links']);
+        if (isset($data['links'])) $sidebarConstructor->setLinks($data['links']);
         $navigation = $sidebarConstructor->getNavigationView();
 
         $levelUpButton = new V_Empty();

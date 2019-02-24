@@ -1,7 +1,7 @@
 /*Верхняя часть сайта*/
 
 #header {
-    height: 130px;
+    height: 100px;
     padding: 20px;
 }
 
@@ -18,7 +18,7 @@
 #logo {
     width: 260px;
     text-align: center;
-    line-height: 50px;
+    line-height: 0px;
     font-size: 24pt;
 }
 
@@ -30,7 +30,7 @@
 
 #menu {
     position: relative;
-    top: 100px;
+    top: 62px;
     float: right;
 }
 
