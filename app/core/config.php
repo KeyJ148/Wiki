@@ -30,7 +30,7 @@ define('DB_LOGIN', 'root');
 //Пароль базы данных
 define('DB_PASSWORD', '123456');
 //Название базы данных
-define('DB_NAME', 'wikisot');
+define('DB_NAME', 'wiki');
 
 /**
  * Настройки роутера

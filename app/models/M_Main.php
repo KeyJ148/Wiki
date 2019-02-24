@@ -4,7 +4,7 @@
 class M_Main extends Model {
 
     public function getData(){
-        $data['title'] = 'Storm of time';
+        $data['title'] = 'Wiki';
         $data['content_description'] = 'На данной странице отображена общая информация о сайте и игре.';
         $data['content'] = $this->getContent();
 

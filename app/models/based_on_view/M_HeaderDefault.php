@@ -3,7 +3,7 @@
 class M_HeaderDefault extends Model{
 
     public function getData(){
-        $header['text'] = 'Storm<br>of time';
+        $header['text'] = 'Wiki';
 
         $header['menu'][0]['url'] = '/';
         $header['menu'][0]['name'] = 'Главная';
