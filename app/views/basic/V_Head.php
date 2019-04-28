@@ -2,7 +2,7 @@
 
 class V_Head extends View{
 
-    public $title = 'Storm of time';
+    public $title = 'Wiki';
     public $css = '';
     public $js = '';
 
@@ -18,8 +18,8 @@ class V_Head extends View{
         ?>
 
         <meta charset="UTF-8" />
-        <meta name="description" content="Сайт об игре Storm of time" />
-        <meta name="keywords" content="Игра, storm of time, storm, time, wiki, википедия, вики, wikipedia, гайд, информация" />
+        <meta name="description" content="Wiki" />
+        <meta name="keywords" content="Wiki, вики, информация" />
 
         <title><?= $this->title ?></title>
         <link rel="shortcut icon" href="<?=IMG_URL?>favicon.ico" type="image/x-icon" />

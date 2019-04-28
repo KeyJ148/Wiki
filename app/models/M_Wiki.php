@@ -16,7 +16,7 @@ class M_Wiki extends Model{
 
     public function getData(){
         $data['title'] = 'Wiki';
-        $data['active_menu'] = 2;
+        $data['active_menu'] = 1;
         $data['content_description'] = '';
 
         $page = ORM_Page::load_by_id($this->id);

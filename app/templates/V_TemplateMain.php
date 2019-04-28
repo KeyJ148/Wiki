@@ -2,7 +2,7 @@
 
 class V_TemplateMain extends View{
 
-    public $head, $error, $header, $sidebar, $content, $bottom, $footer;
+    public $head, $error, $header, $sidebar, $content, $bottom;
 
     public function display(){
 ?>
@@ -25,7 +25,6 @@ class V_TemplateMain extends View{
             </div>
             <?php $this->bottom->display(); ?>
         </div>
-        <?php $this->footer->display(); ?>
         </body>
         </html>
 

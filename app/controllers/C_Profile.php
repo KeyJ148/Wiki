@@ -13,7 +13,7 @@ class C_Profile extends DefaultPageController {
         $this->title = $data['title'];
         $this->content = $data['content'];
         $this->content_description = $data['content_description'];
-        $this->active_menu = 4;
+        $this->active_menu = 3;
 
         $template = $this->getTemplateMain();
         $template->head->addCSS(CSS_URL . 'parts/input.css');

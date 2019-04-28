@@ -25,8 +25,8 @@ class M_ProfileNoAuth extends Model {
         $registrationForm = new V_LoginForm();
         $registrationForm->form_path = FORMS_PATH['registration'];
         $registrationForm->text = 'Регистрация';
-        $text = 'Чтобы зарегистрироваться на сайте, введите ваш логин и пароль. Всего-то!<br>
-                 После регистрации вы сможете сохранять свою статистику и сравнивать её со статистикой других игроков.'
+        $text = 'Чтобы зарегистрироваться на сайте, введите ваш логин и пароль.<br>
+                 После регистрации и получения прав модератора вы сможете изменять страницы на Wiki.'
                  . $registrationForm->getText();
         $content->addTopic($name, $text);
 

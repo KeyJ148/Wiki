@@ -14,8 +14,17 @@ class M_ProfileAuth extends Model {
     private function getContent(){
         $content = new M_ContentConstructor();
 
+        $person = new ORM_Person();
+        $person->db_login = $_SESSION['login'];
+        $person->load();
+
+        $role = new ORM_Role();
+        $role->db_id = $person->db_role_id;
+        $role->load();
+
         $name = 'Ваш профиль';
-        $text = 'В дальнейшем здесь появится ваша статистика и возможность редактировать профиль.';
+        $text = 'Вы вошли на сайт как '  . $_SESSION['login'] . '.<br>
+                 Ваша категория прав: ' . $role->db_name;
         $content->addTopic($name, $text);
 
         $name = 'Выход';
