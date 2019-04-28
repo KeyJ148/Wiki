@@ -21,7 +21,7 @@ abstract class DefaultPageController extends Controller {
         $header->header = $headerData['menu'];
 
         $bootom = new V_Bottom();
-        $bootomData = (new M_BootomDefault())->getData();
+        $bootomData = (new M_BottomDefault())->getData();
         $bootom->sidebar_heading = $bootomData['sidebar_heading'];
         $bootom->content_heading = $bootomData['content_heading'];
         $bootom->content_text = $bootomData['content_text'];
@@ -29,9 +29,6 @@ abstract class DefaultPageController extends Controller {
         $bootom->list_1_link = $bootomData['list_1_link'];
         $bootom->list_2_name = $bootomData['list_2_name'];
         $bootom->list_2_link = $bootomData['list_2_link'];
-
-        $footer = new V_Footer();
-        $footer->text = (new M_FooterDefault())->getData();
 
         $content = new V_Content();
         $content->content = $this->content;
@@ -46,7 +43,6 @@ abstract class DefaultPageController extends Controller {
         $template->error = $error;
         $template->header = $header;
         $template->bottom = $bootom;
-        $template->footer = $footer;
         $template->content = $content;
         $template->sidebar = $sidebar;
 
