@@ -7,6 +7,7 @@ class DB {
     public static function connect(){
         if (!isset(self::$instance) || !self::$instance) {
             self::$instance = new mysqli(DB_HOST, DB_LOGIN, DB_PASSWORD, DB_NAME);
+            self::$instance->set_charset("UTF-8");
         }
 
         if (!self::$instance){

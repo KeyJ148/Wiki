@@ -17,6 +17,8 @@ class M_Error extends Model {
     const _ERROR_PASSWORD_LARGE = 12;
     const _ERROR_LOGIN_SPEC_CHARS = 13;
     const _ERROR_CATEGORY_RECURSIVE = 14;
+    const _ERROR_CHANGE_ROLE_YOURSELF = 15;
+    const _ERROR_FIELD_NOT_VALID = 16;
 
 
     private $error;
@@ -38,6 +40,8 @@ class M_Error extends Model {
             case M_Error::_ERROR_PASSWORD_LARGE: return "пароль должен быть короче 50 символов";
             case M_Error::_ERROR_LOGIN_SPEC_CHARS: return "логин должен состоять из латинских букв, цифр и знака подчеркивания";
             case M_Error::_ERROR_CATEGORY_RECURSIVE: return "в качестве категории страницы не может быть сама страница или её подкатегория";
+            case M_Error::_ERROR_CHANGE_ROLE_YOURSELF: return "невозможно изменить роль самому себе";
+            case M_Error::_ERROR_FIELD_NOT_VALID: return "неверно заполнено одно из полей";
         }
     }
 

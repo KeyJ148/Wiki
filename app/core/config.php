@@ -21,18 +21,6 @@ define('CSS_FOLDER', ROOT_FOLDER . CSS_URL);
 define('IMG_FOLDER', ROOT_FOLDER . IMG_URL);
 
 /**
- * Настройки базы данных
- */
-//Хост базы данных
-define('DB_HOST', 'localhost');
-//Логин базы данных
-define('DB_LOGIN', 'root');
-//Пароль базы данных
-define('DB_PASSWORD', '123456');
-//Название базы данных
-define('DB_NAME', 'wiki');
-
-/**
  * Настройки роутера
  */
 //Префикс названия класса контроллера
@@ -55,5 +43,29 @@ const FORMS_PATH = array(
     'page_edit' => '/wiki/edit/',
     'page_save' => '/wiki/save/',
     'page_delete' => '/wiki/delete/',
-    'page_view' => '/wiki/view/'
+    'page_view' => '/wiki/view/',
+    'change_role' => '/members/change/'
 );
+
+/**
+ * Настройки базы данных
+ */
+//Хост базы данных
+define('DB_HOST', 'localhost');
+//Логин базы данных
+define('DB_LOGIN', 'root');
+//Пароль базы данных
+define('DB_PASSWORD', '123456');
+//Название базы данных
+define('DB_NAME', 'wiki');
+
+/*
+ * Настройки отображаемого текста
+ */
+//Название в левом верхнем углу
+define('M_MAIN_TITLE', 'Wiki');
+//Контакты для связи (отображаемое имя и ссылка)
+define('M_BOTTOM_NAME_1', 'admin@wiki.ru');
+define('M_BOTTOM_LINK_1', 'mailto:admin@wiki.ru');
+define('M_BOTTOM_NAME_2', 'Чат в телеграмм');
+define('M_BOTTOM_LINK_2', '');
