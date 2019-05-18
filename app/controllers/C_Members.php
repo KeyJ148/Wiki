@@ -19,12 +19,12 @@ class C_Members extends DefaultPageController {
         $role = $_POST['role'];
 
         if ($id == null || $role == null){
-            $this->redirect(M_Error::_ERROR_FIELD_EMPTY, 0);
+            $this->redirect(M_Error::_ERROR_FIELD_EMPTY);
             return;
         }
 
         if (!isset($_SESSION['login'])){
-            $this->redirect(M_Error::_ERROR_NOT_LOGGED_IN, 0);
+            $this->redirect(M_Error::_ERROR_NOT_LOGGED_IN);
             return;
         }
 
